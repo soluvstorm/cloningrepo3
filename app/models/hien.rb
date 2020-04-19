@@ -1,0 +1,2 @@
+class Hien < ApplicationRecord
+end

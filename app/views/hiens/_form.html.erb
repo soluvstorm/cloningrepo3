@@ -1,0 +1,22 @@
+<%= form_with(model: hien, local: true) do |form| %>
+  <% if hien.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(hien.errors.count, "error") %> prohibited this hien from being saved:</h2>
+
+      <ul>
+      <% hien.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :username %>
+    <%= form.text_field :username, id: :hien_username %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

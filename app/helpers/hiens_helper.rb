@@ -1,0 +1,2 @@
+module HiensHelper
+end
